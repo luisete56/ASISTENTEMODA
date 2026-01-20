@@ -23,10 +23,7 @@ import {
 } from "lucide-react";
 import { SiNodedotjs, SiExpress, SiOpenai } from "react-icons/si";
 
-import heroImage from "@assets/generated_images/clean_abstract_tech_background.png";
-import appMockup from "@assets/generated_images/mobile_app_chat_mockup.png";
-import iotDevice from "@assets/generated_images/iot_closet_sensor_device.png";
-import architectureDiagram from "@assets/generated_images/system_architecture_diagram.png";
+import heroImage from "@assets/generated_images/organized_closet_with_clothes.png";
 
 function ThemeToggle() {
   const { theme, setTheme } = useTheme();
@@ -193,7 +190,6 @@ function SystemSection() {
       description:
         "Interfaz de conversación intuitiva con ChatGPT para consultas de moda personalizadas. Recibe recomendaciones y looks generados por IA.",
       features: ["Chat con IA", "Looks personalizados", "Gestión de prendas"],
-      image: appMockup,
     },
     {
       icon: Eye,
@@ -202,7 +198,6 @@ function SystemSection() {
       description:
         "Sensor inteligente instalado en el armario con visión artificial. Detecta automáticamente qué prendas entran y salen.",
       features: ["Visión artificial", "Detección automática", "Sincronización"],
-      image: iotDevice,
     },
     {
       icon: Server,
@@ -211,7 +206,6 @@ function SystemSection() {
       description:
         "Backend que coordina toda la lógica y decisiones del sistema. Único punto de comunicación entre la app y el objeto físico.",
       features: ["API REST", "Lógica centralizada", "Procesamiento IA"],
-      image: null,
     },
   ];
 
@@ -245,16 +239,6 @@ function SystemSection() {
                   {comp.number}
                 </span>
               </div>
-
-              {comp.image && (
-                <div className="mb-4 rounded-lg overflow-hidden bg-muted/30">
-                  <img
-                    src={comp.image}
-                    alt={comp.title}
-                    className="w-full h-32 object-cover"
-                  />
-                </div>
-              )}
 
               <h3 className="text-xl font-semibold mb-3">{comp.title}</h3>
               <p className="text-muted-foreground mb-6 text-sm leading-relaxed">
@@ -293,14 +277,6 @@ function ArchitectureSection() {
         </div>
 
         <Card className="p-6 md:p-10">
-          <div className="mb-8 rounded-lg overflow-hidden bg-muted/30 p-4">
-            <img
-              src={architectureDiagram}
-              alt="Diagrama de arquitectura del sistema"
-              className="w-full h-auto object-contain"
-            />
-          </div>
-
           <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-4">
             <div className="flex flex-col items-center text-center p-4">
               <div className="p-4 bg-primary/10 rounded-full mb-3">
@@ -313,7 +289,7 @@ function ArchitectureSection() {
             </div>
 
             <div className="flex items-center">
-              <div className="w-16 md:w-24 h-0.5 bg-gradient-to-r from-primary/50 to-primary" />
+              <div className="w-16 md:w-24 h-0.5 bg-primary/50" />
               <ArrowRight className="h-4 w-4 text-primary -ml-1" />
             </div>
 
@@ -329,7 +305,7 @@ function ArchitectureSection() {
 
             <div className="flex items-center">
               <ArrowRight className="h-4 w-4 text-primary rotate-180 md:rotate-0 -mr-1 md:-ml-1" />
-              <div className="w-16 md:w-24 h-0.5 bg-gradient-to-r from-primary to-primary/50" />
+              <div className="w-16 md:w-24 h-0.5 bg-primary/50" />
             </div>
 
             <div className="flex flex-col items-center text-center p-4">
