@@ -114,7 +114,7 @@ function HeroSection() {
           alt="Tecnología de moda inteligente"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-background/30 dark:bg-background/40" />
+        <div className="absolute inset-0 bg-background/15 dark:bg-background/20" />
       </div>
 
       <div className="max-w-6xl mx-auto px-4 py-20 text-center relative z-10">
