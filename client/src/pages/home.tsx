@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { useTheme } from "@/components/theme-provider";
 import {
   Smartphone,
   Server,
@@ -17,32 +16,11 @@ import {
   Camera,
   Wand2,
   Database,
-  Moon,
-  Sun,
   ChevronDown,
 } from "lucide-react";
 import { SiNodedotjs, SiExpress, SiOpenai } from "react-icons/si";
 
 import heroImage from "@assets/generated_images/organized_closet_with_clothes.png";
-
-function ThemeToggle() {
-  const { theme, setTheme } = useTheme();
-
-  const toggleTheme = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
-  };
-
-  return (
-    <Button
-      size="icon"
-      variant="ghost"
-      onClick={toggleTheme}
-      data-testid="button-theme-toggle"
-    >
-      {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
-    </Button>
-  );
-}
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -90,7 +68,6 @@ function Header() {
           </nav>
 
           <div className="flex items-center gap-2">
-            <ThemeToggle />
             <Button
               size="icon"
               variant="ghost"
