@@ -26,7 +26,7 @@
   --popover: 45 25% 97%;
   --popover-foreground: 0 0% 100%;
   --popover-border: 45 15% 94%;
-  --primary: 247.88deg 43.61% 44.51%;
+  --primary: 24 90% 50%;
   --primary-foreground: 0 0% 100%;
   --secondary: 0 0% 76.86%;
   --secondary-foreground: 0 0% 10.2%;
@@ -57,9 +57,9 @@
   --shadow-2xl: 0px 2px 0px 0px hsl(9, 75%, 61% / 0.00);
   --tracking-normal: 0em;
   --spacing: 0.25rem;
-  --surface-vibrant: 248 80% 95%;
-  --surface-vibrant-2: 280 70% 92%;
-  --surface-accent-glow: 248 60% 85%;
+  --surface-vibrant: 24 80% 95%;
+  --surface-vibrant-2: 30 70% 92%;
+  --surface-accent-glow: 24 60% 85%;
 
 /* Fallback for older browsers */
   --sidebar-primary-border: hsl(var(--sidebar-primary));
