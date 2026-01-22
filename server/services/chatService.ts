@@ -1,4 +1,4 @@
-import { type ChatMessage } from "@shared/schema";
+import { type ChatMessage } from "../../shared/schema";
 
 const mockResponses: ChatMessage[] = [
   {

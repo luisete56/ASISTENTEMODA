@@ -1,15 +1,11 @@
 import type { Express } from "express";
-import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { getChatResponse } from "./services/chatService";
 import { processWardrobeEvent } from "./services/visionService";
 import { generateOutfitImage } from "./services/imageGenerationService";
-import { chatRequestSchema, insertClothingItemSchema, wardrobeEventSchema } from "@shared/schema";
+import { chatRequestSchema, insertClothingItemSchema, wardrobeEventSchema } from "../shared/schema";
 
-export async function registerRoutes(
-  httpServer: Server,
-  app: Express
-): Promise<Server> {
+export async function registerRoutes(app: Express): Promise<void> {
   
   app.post("/api/chat", async (req, res) => {
     try {
@@ -92,5 +88,5 @@ export async function registerRoutes(
     }
   });
 
-  return httpServer;
+  return;
 }

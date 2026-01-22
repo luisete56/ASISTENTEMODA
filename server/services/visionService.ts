@@ -1,4 +1,4 @@
-import { type WardrobeEventResponse } from "@shared/schema";
+import { type WardrobeEventResponse } from "../../shared/schema";
 import { storage } from "../storage";
 
 export async function processWardrobeEvent(imagenCapturada?: string): Promise<WardrobeEventResponse> {
